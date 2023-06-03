@@ -1,0 +1,4 @@
+for links of face book instagram -footer.jsx at line 79
+as classess 
+method
+onclick={()=> window.open("https//afjkhjs", "_blank")}
