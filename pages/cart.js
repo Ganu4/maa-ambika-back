@@ -1,12 +1,12 @@
-import Wrapper from '@/components/Wrapper';
-import Image from 'next/image';
-import Link from 'next/link';
 import React, { useMemo, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import Wrapper from "@/components/Wrapper";
 import CartItem from "@/components/CartItem";
 import { useSelector } from "react-redux";
 
-import { loadStripe } from "@stripe/stripe-js";
 import { makePaymentRequest } from "@/utils/api";
+import { loadStripe } from "@stripe/stripe-js";
 const stripePromise = loadStripe(
     process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
 );
@@ -21,7 +21,7 @@ const Cart = () => {
             0
         );
     }, [cartItems]);
-    
+
     const handlePayment = async () => {
         try {
             setLoading(true);
@@ -36,9 +36,10 @@ const Cart = () => {
             setLoading(false);
             console.log(error);
         }
-    };    
-  return ( 
-    <div className="w-full md:py-20px">
+    };
+
+    return (
+        <div className="w-full md:py-20">
             <Wrapper>
                 {cartItems.length > 0 && (
                     <>
@@ -127,8 +128,8 @@ const Cart = () => {
                     </div>
                 )}
             </Wrapper>
-    </div>
-  );
+        </div>
+    );
 };
 
-export default Cart
+export default Cart;
