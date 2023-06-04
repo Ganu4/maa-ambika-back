@@ -23,13 +23,13 @@ const HeroBanner = () => {
    >
       
        <div>
-            <img src="20230521_115522.JPG" className="aspect-[16/10] md:aspect-auto object-cover" />
+            <img src="/20230521_115522.JPG" className="aspect-[16/10] md:aspect-auto object-cover" />
         </div>
         <div>
-            <img src="20230521_115634.JPG" className="aspect-[16/10] md:aspect-auto object-cover" />
+            <img src="/20230521_115634.JPG" className="aspect-[16/10] md:aspect-auto object-cover" />
         </div>
         <div>
-            <img src="20230603_100435.JPG" className="aspect-[16/10] md:aspect-auto object-cover" />
+            <img src="/20230603_100435.JPG" className="aspect-[16/10] md:aspect-auto object-cover" />
         </div>
     </Carousel>
   </div>;
